@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: turquoise;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(24, 15, 160);
+    height: 5rem;
+}
+
+.logo {
+    text-decoration: none;
+    margin-left: 2rem;
+    color: white;
+    display: inline-block;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1.3rem;
+    text-transform: uppercase;
+}
