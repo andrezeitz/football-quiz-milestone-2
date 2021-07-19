@@ -22,7 +22,7 @@ body {
 
 .logo {
     text-decoration: none;
-    margin-left: 2rem;
+    margin-left: 1rem;
     color: white;
     display: inline-block;
 }
@@ -42,6 +42,17 @@ body {
     display: block;
     text-decoration: none;
     color: white;
-    padding: 1.3rem;
     text-transform: uppercase;
+}
+
+.play-button, .instructions {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 34px;
+    padding: 7px;
+    min-width: unset;
+    margin: 15px;
+    border: 1px solid white;
+
 }
