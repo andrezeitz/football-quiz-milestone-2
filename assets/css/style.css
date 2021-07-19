@@ -10,7 +10,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: white;
-    background-color: rgb(20, 12, 133)
+    background-color: rgb(8, 92, 33)
 }
 
 h1, h2, h3 {
@@ -19,6 +19,7 @@ h1, h2, h3 {
 
 p {
     color: #3a3a3a;
+    text-align: center;
 }
 
 /* navbar */
@@ -29,7 +30,7 @@ p {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background: rgb(24, 15, 160);
+    background: rgb(33, 143, 57);
     height: 5rem;
 }
 
@@ -69,11 +70,12 @@ p {
 }
 
 .play-button:hover, .instructions:hover {
-    border-color: green;
-    background-color: green;
+    border-color: rgb(216, 61, 61);
+    background-color: rgb(216, 61, 61);
 
 }
 
+/* main container */
 
 .main {
     display: flex;
@@ -83,19 +85,27 @@ p {
     width: 100vw;
 }
 
+/* container to hold game-box */
+
 .container {
     width: 800px;
     max-width: 80%;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 30px;
     margin-top: 200px;
 }
+
+/* container for game box */
 
 .heading-box {
     color: #3a3a3a;
     text-align: center;
     padding: 0.5rem;
+}
+
+.text-box {
+    padding-bottom: 20px;
 }
 
 .btn-grid {
@@ -111,40 +121,24 @@ p {
     height: 80px;
     border: 1px solid black;
     border-radius: 20px 20px;
-    background-color: green;
+    background-color: red;
+    font-size: 20px;
 }
 
 .controls {
     gap: 30px;
     display: flex;
     justify-content: center;
-}
-
-.start-btn {
-    background-color: blue;
-}
-
-
-
-
-
-/* container for game box 
-
-.container {
-    display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-.game-box {
-    background: white;
-    height: 400px;
-    width: 50%;
-    border-radius: 2%;
-    margin-top: 200px;
+.start-btn, .next-btn {
+    background-color: rgb(33, 143, 57);
+    color: white;
 }
 
-.controls {
-    align-items: center;
-    justify-content: center;
+/*
+.hide {
+    display: none;
 }
+
