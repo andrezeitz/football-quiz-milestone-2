@@ -10,7 +10,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: white;
-    background-color: turquoise;
+    background-color: rgb(20, 12, 133)
 }
 
 h1, h2, h3 {
@@ -65,4 +65,24 @@ h1, h2, h3 {
     border-color: green;
     background-color: green;
 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-box {
+    background: white;
+    height: 400px;
+    width: 50%;
+    border-radius: 2%;
+    margin-top: 200px;
+}
+
+.heading-box {
+    color: #3a3a3a;
+    text-align: center;
+    padding: 0.5rem;
 }
