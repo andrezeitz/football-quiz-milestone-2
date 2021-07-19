@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,10 +8,14 @@
 }
 
 body {
+    font-family: 'Open Sans', sans-serif;
     color: white;
     background-color: turquoise;
 }
 
+h1, h2, h3 {
+    font-family: 'PT Sans', sans-serif;
+}
 .navbar {
     display: flex;
     position: relative;
@@ -42,7 +48,6 @@ body {
     display: block;
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
 }
 
 .play-button, .instructions {
@@ -50,9 +55,14 @@ body {
     font-size: 16px;
     line-height: 24px;
     border-radius: 34px;
-    padding: 7px;
+    padding: 10px;
     min-width: unset;
     margin: 15px;
-    border: 1px solid white;
+    border: 2px solid white;
+}
+
+.play-button:hover, .instructions:hover {
+    border-color: green;
+    background-color: green;
 
 }
