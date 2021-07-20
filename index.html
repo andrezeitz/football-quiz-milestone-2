@@ -28,34 +28,75 @@
             </div>
 
         </div>
-    </header>    
-    <!--main container-->
-    <div class="main">
-        <!--container holding game-box-->
-        <div class="container">
-            <!--game box-->
-            <div class="game-box" class="hide">
-                <h2 class="heading-box">WELCOME TO PLAY FOOTBALL QUIZ</h2>
-                    <p class="text-box">If you feel you are ready to try the game please press the start button.</p>
-                    <!--answer buttons for quiz, keeps hidden from start-->
-                <div id="answer-buttons" class="btn-grid hide">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
-                </div>
-                <!--control buttons for quiz, next button keeps hidden from start-->
-                <div class="controls">
-                    <button id="start-btn" class="start-btn btn">Start</button>
-                    <button id="next-btn" class="next-btn btn hide">Next</button>
-                </div>
-            </div>
-        </div>        
-    </div>    
+    </header>
+    <main>
+        <!--start button-->    
+        <div class="start-btn"><button>Start Football Quiz</button></div>
     
+        <!--rule box-->
+        <div class="rule-box">
+            <div class="rule-title">
+                <p>This are the rules for this quiz</p>
+            </div>
+            <div class="rule-list">
+                <div class="rule-text">You will get 10 points for every correct answer</div>
+                <div class="rule-text">You will get 10 points for every correct answer</div>
+                <div class="rule-text">You will get 10 points for every correct answer</div>
+                <div class="rule-text">You will get 10 points for every correct answer</div>
+                <div class="rule-text">You will get 10 points for every correct answer</div>
+            </div>
+            <div class="buttons">
+                <button class="exit">Exit Quiz</button>
+                <button class="continue">Continue</button>
+            </div>
+        </div>
+        <div class="quiz-box">
+            <header>
+                <div class="title">Football Quiz</div>
+                <div class="timer">
+                    <div class="time-text">Time Left</div>
+                    <div class="timer-second">20</div>
+                </div>
+            </header>
+            <section>
+                <div class="question-text">
+                    <span>Hyper Text</span>
+                </div>
+                <div class="option-list">
+                    <div class="option"></div>
+                        <span>Markup</span>
+                        <div class="icon tick">
+                    </div>
+                    <div class="option"></div>
+                        <span>Markup</span>
+                        <div class="icon tick">
+                    </div>
+                    <div class="option"></div>
+                        <span>Markup</span>
+                        <div class="icon tick">
+                    </div>
+                    <div class="option"></div>
+                        <span>Markup</span>
+                        <div class="icon tick">
+                    </div>
+                </div>
+            </section>
+
+            <!--footer-->
+            <footer>
+                <div class="total-que">
+                    <span><p>2</p>Of<p>5</p>Questions</span>
+                </div>
+                <button class="next-btn">Next Question</button>
+            </footer>
+        </div>
+    </main>
     
     
     <script src="assets/scripts/script.js"></script>
 
 </body>
 </html> 
+
+
+
