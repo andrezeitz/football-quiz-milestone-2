@@ -72,7 +72,7 @@ h1, h2, h3 {
 
 /* main containers for each box */
 
-.start-btn, .rule-box, .quiz-box {
+.start-btn, .rule-box, .quiz-box, .result-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -93,7 +93,7 @@ h1, h2, h3 {
 /* rule-box section */
 
 .rule-box {
-    
+    display: none;
     width: 500px;
     background: white;
     border-radius: 10px;
@@ -102,7 +102,6 @@ h1, h2, h3 {
 .rule-box .rule-title {
     display: flex;
     align-items: center;
-    justify-content: center;
     height: 60px;
     width: 100%;
     border-bottom: 1px solid #3a3a3a;
@@ -296,4 +295,47 @@ footer .next-btn {
 
 footer .next-btn:hover {
     background: lightgreen;
+}
+
+/* result box */
+
+.result-box {
+    background: white;
+    width: 500px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.result-box .score {
+    display: flex;
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.result-box span p {
+    font-weight: 600;
+    padding: 0 4px;
+}
+
+.result-box .buttons {
+    display: flex;
+    margin 20px 0;
+}
+
+.result-box .buttons button {
+    margin: 0 10px;
+    height: 45px;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid lightgreen;
 }
