@@ -70,7 +70,7 @@ h1, h2, h3 {
 
 }
 
-/* main container */
+/* main containers for each box */
 
 .start-btn, .rule-box, .quiz-box {
     position: absolute;
@@ -78,6 +78,8 @@ h1, h2, h3 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* start button first page */
 
 .start-btn button {
     font-size: 35px;
@@ -88,8 +90,10 @@ h1, h2, h3 {
     color: rgb(8, 92, 33);
 }
 
+/* rule-box section */
+
 .rule-box {
-    display: none;
+    
     width: 500px;
     background: white;
     border-radius: 10px;
@@ -139,6 +143,8 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
+/* exit button inside rule-box */
+
 .buttons button.exit {
     background: lightgray;
     color: rgb(33, 143, 57);;
@@ -152,6 +158,8 @@ h1, h2, h3 {
     border-radius: 10px;
     display: none;
 }
+
+/* quiz-box header section */
 
 .quiz-box header {
     height: 70px;
@@ -199,8 +207,10 @@ h1, h2, h3 {
     user-select: none;
 }
 
+/* quiz-box question section */
+
 .quiz-box section {
-    padding: 25px 30px 20px 30px;
+    padding: 25px 30px 0 30px;
     background: white;
 }
 
@@ -228,6 +238,26 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
+.quiz-box section .option-list .option:hover {
+    background: lightgreen;
+}
+
+.quiz-box .total-que {
+    margin-left: 30px;
+}
+
+.quiz-box section .total-que span {
+    display: flex;
+    user-select: none;
+}
+    
+section .total-que span p{
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+/* quiz-box footer section */
+
 .quiz-box footer {
     height: 60px;
     width: 100%;
@@ -237,14 +267,18 @@ h1, h2, h3 {
     justify-content: space-between;
 }
 
-.quiz-box footer .total-que span {
-    display: flex;
-    user-select: none;
+#progress-bar {
+    width: 200px;
+    height: 30px;
+    border: 1px solid lightgreen;
+    border-radius: 50px;
+    overflow: hidden;
 }
-    
-footer .total-que span p{
-    font-weight: 500;
-    padding: 0 5px;
+
+#progress-bar-full {
+    height: 100%;
+    background: lightgreen;
+    width: 0%;
 }
 
 footer .next-btn {
@@ -258,4 +292,8 @@ footer .next-btn {
     background: rgb(8, 92, 33);
     border-radius: 5px;
     cursor: pointer;
+}
+
+footer .next-btn:hover {
+    background: lightgreen;
 }
