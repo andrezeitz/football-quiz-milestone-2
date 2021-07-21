@@ -93,7 +93,7 @@ h1, h2, h3 {
 /* rule-box section */
 
 .rule-box {
-    display: none;
+
     width: 500px;
     background: white;
     border-radius: 10px;
@@ -117,7 +117,11 @@ h1, h2, h3 {
 .rule-box .rule-list .rule-text {
     margin: 5px 0;
     font-size: 17px;
-    color: #3a3a3a;
+}
+
+.rule-box .rule-list .rule-text span {
+    color: rgb(8, 92, 33);
+    font-weight: 800;
 }
 
 .rule-box .buttons {
@@ -309,6 +313,7 @@ footer .next-btn:hover {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    display: none;
 }
 
 .result-box .score {
@@ -318,9 +323,18 @@ footer .next-btn:hover {
     font-weight: 500;
 }
 
-.result-box span p {
+.result-box .score p {
     font-weight: 600;
     padding: 0 4px;
+}
+
+.result-box .score span {
+    color: rgb(8, 92, 33);
+}
+
+.result-box .icon {
+    font-size: 150px;
+    margin-bottom: 10px;
 }
 
 .result-box .buttons {
@@ -338,4 +352,14 @@ footer .next-btn:hover {
     font-weight: 500;
     border-radius: 5px;
     border: 1px solid lightgreen;
+    cursor: pointer;
+}
+
+.result-box .buttons .play-again {
+    background: rgb(33, 143, 57);
+    color: white;
+}
+
+.result-box .buttons .play-again:hover {
+    background: rgb(8, 92, 33);
 }
