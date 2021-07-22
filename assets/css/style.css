@@ -23,7 +23,7 @@ h1, h2, h3 {
     display: flex;
     position: relative;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background: rgb(33, 143, 57);
     height: 5rem;
@@ -34,6 +34,7 @@ h1, h2, h3 {
     margin-left: 1rem;
     color: white;
     display: inline-block;
+    font-size: 300%;
 }
 
 .navbar-links ul {
@@ -88,12 +89,13 @@ h1, h2, h3 {
     outline: none;
     border: none;
     color: rgb(8, 92, 33);
+    cursor: pointer;
 }
 
 /* rule-box section */
 
 .rule-box {
-
+    display: none;
     width: 500px;
     background: white;
     border-radius: 10px;
