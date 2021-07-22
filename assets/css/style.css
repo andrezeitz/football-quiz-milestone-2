@@ -80,6 +80,13 @@ h1, h2, h3 {
     transform: translate(-50%, -50%);
 }
 
+.rule-box.activeInfo, .quiz-box.activeQuiz {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%;) scale (0.9);
+    z-index: 5;
+}
+
 /* start button first page */
 
 .start-btn button {
@@ -95,10 +102,12 @@ h1, h2, h3 {
 /* rule-box section */
 
 .rule-box {
-    display: none;
     width: 500px;
     background: white;
     border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%;) scale (0.9);
 }
 
 .rule-box .rule-title {
@@ -161,7 +170,9 @@ h1, h2, h3 {
     width: 500px;
     background: white;
     border-radius: 10px;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%;) scale (0.9);
 }
 
 /* quiz-box header section */
