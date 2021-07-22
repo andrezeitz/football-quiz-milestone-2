@@ -19,13 +19,19 @@ exitBtn.onclick = ()=> {
 continueBtn.onclick = ()=> {
     ruleBox.classList.remove("activeInfo"); //rule box hidden
     quizBox.classList.add("activeQuiz"); //show quiz box 
-    showQuestions();
+    showQuestions(2);
 }
 
 let queCount = 0;
 
-function showQuestions(){
-    let questionText = document.querySelector(".question-text");
-    let queTag = '<span>'+ questions[0].question +'</span>';
+function showQuestions(index) {
+    const questionText = document.querySelector(".question-text");
+    const optionList = document.querySelector(".option-list");
+    let queTag = '<span>'+ questions[index].question +'</span>';
+    let optionTag = '<div class="option">' + questions[index].options[0] +'<span></span></div>'
+                    + '<div class="option">'+ questions[index].options[1] +'<span></span></div>'
+                    + '<div class="option">'+ questions[index].options[2] +'<span></span></div>'
+                    + '<div class="option">'+ questions[index].options[3] +'<span></span></div>';
     questionText.innerHTML = queTag;
-}
+    optionList.innerHTML = optionTag;
+} 
