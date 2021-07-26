@@ -19,16 +19,25 @@ exitBtn.onclick = ()=> {
 continueBtn.onclick = ()=> {
     ruleBox.classList.remove("activeInfo"); //rule box hidden
     quizBox.classList.add("activeQuiz"); //show quiz box 
-    showQuestions(2);
+    showQuestions(0);
+    queCounter(1);
 }
 
 let queCount = 0;
+let queNumb = 1;
 
-let nextBtn = quizBox.querySelector(".next-btn");
+const nextBtn = quizBox.querySelector(".next-btn");
 
+// when next button clicked 
 nextBtn.onclick = ()=> {
-    queCount++;
-    showQuestions(queCount);
+    if (queCount < questions.length - 1) {
+        queCount++;
+        queNumb++;
+        showQuestions(queCount);
+        queCounter(queNumb)
+    } else {
+        console.log("Finished!")
+    }
 }
 
 /**
@@ -38,11 +47,37 @@ nextBtn.onclick = ()=> {
 function showQuestions(index) {
     const questionText = document.querySelector(".question-text");
     const optionList = document.querySelector(".option-list");
-    let queTag = '<span>'+ questions[index].question +'</span>';
+    let queTag = '<span>'+ questions[index].numb + "." + questions[index].question +'</span>';
     let optionTag = '<div class="option">' + questions[index].options[0] +'<span></span></div>'
                     + '<div class="option">'+ questions[index].options[1] +'<span></span></div>'
                     + '<div class="option">'+ questions[index].options[2] +'<span></span></div>'
                     + '<div class="option">'+ questions[index].options[3] +'<span></span></div>';
     questionText.innerHTML = queTag;
     optionList.innerHTML = optionTag;
+    const option = optionList.querySelectorAll(".option");
+    for (let i = 0; i < option.length; i++) {
+        option[i].setAttribute("onclick", "optionSelected(this)")
+    }
+} 
+
+function optionSelected(answer) {
+    let userAns = answer.textContent;
+    let correctAns = questions[queCount].answer;
+    if (userAns == correctAns) {
+        console.log("Answer is Correct");
+    } else {
+        console.log("Answer is Wrong");
+    }    
+}
+
+
+
+
+
+
+
+function queCounter(index) {
+    const bottomCueCounter = quizBox.querySelector(".total-que");
+    let totalCuesCountTag = '<span><p>'+ index + '</p>of<p>' + questions.length +'</p>Questions</span>';
+    bottomCueCounter.innerHTML = totalCuesCountTag;
 } 

@@ -2,29 +2,29 @@ let questions = [
     {
         numb: 1,
         question: "aaa",
-        answer: "a",
+        answer: "d",
         options: [
             "a",
-            "a",
-            "a",
-            "a"
+            "b",
+            "c",
+            "d"
         ]
     },
     {
         numb: 2,
         question: "bb",
-        answer: "a",
+        answer: "aa",
         options: [
-            "a",
-            "",
-            "",
-            ""
+            "aa",
+            "bb",
+            "cc",
+            "ff"
         ]
     },
     {
         numb: 3,
         question: "cc",
-        answer: "a",
+        answer: "bb",
         options: [
             "bb",
             "b",
@@ -38,20 +38,20 @@ let questions = [
         answer: "a",
         options: [
             "a",
-            "",
-            "",
-            ""
+            "v",
+            "c",
+            "s"
         ]
     },
     {
         numb: 5,
         question: "ff",
-        answer: "a",
+        answer: "55",
         options: [
-            "a",
-            "",
-            "",
-            ""
+            "55",
+            "1",
+            "34",
+            "33"
         ]
     },
 ];
