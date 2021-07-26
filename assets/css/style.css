@@ -256,8 +256,20 @@ h1, h2, h3 {
 
 .quiz-box section .option-list .option:hover {
     background: lightgreen;
+} 
+
+.quiz-box section .option-list .option.correct {
+    background:rgb(24, 20, 20)
 }
 
+.quiz-box section .option-list .option.wrong {
+    background: red
+}
+
+.quiz-box section .option-list .option.disabled {
+    pointer-events: none;
+}
+    
 .quiz-box .total-que {
     margin-left: 30px;
 }

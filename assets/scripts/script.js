@@ -5,6 +5,8 @@ const exitBtn = ruleBox.querySelector(".buttons .exit");
 const continueBtn = ruleBox.querySelector(".buttons .continue");
 const quizBox = document.querySelector(".quiz-box");
 
+const optionList = document.querySelector(".option-list");
+
 //If start
 startBtn.onclick = ()=> {
     ruleBox.classList.add("activeInfo"); //show info box
@@ -46,7 +48,6 @@ nextBtn.onclick = ()=> {
  */
 function showQuestions(index) {
     const questionText = document.querySelector(".question-text");
-    const optionList = document.querySelector(".option-list");
     let queTag = '<span>'+ questions[index].numb + "." + questions[index].question +'</span>';
     let optionTag = '<div class="option">' + questions[index].options[0] +'<span></span></div>'
                     + '<div class="option">'+ questions[index].options[1] +'<span></span></div>'
@@ -60,15 +61,34 @@ function showQuestions(index) {
     }
 } 
 
+/**
+ * questions will show green color for correct answer
+ * rest of the questions will show red color for wrong answers
+ */
 function optionSelected(answer) {
     let userAns = answer.textContent;
     let correctAns = questions[queCount].answer;
+    let allOptions = optionList.children.length;
     if (userAns == correctAns) {
+        answer.classList.add("correct");
         console.log("Answer is Correct");
     } else {
+        answer.classList.add("wrong");
         console.log("Answer is Wrong");
+
+        //if the answer is wrong select the correct answer
+        for (let i = 0; i < allOptions; i++) {
+            if (optionList.children[i].textContent == correctAns) {
+                optionList.children[i].setAttribute("class", "option correct");            
+            }
+        }
     }    
-}
+
+//make so user can only click one answer per question
+for (let i = 0; i < allOptions; i++) {
+    optionList.children[i].classList.add("disabled");
+    }
+}    
 
 
 
