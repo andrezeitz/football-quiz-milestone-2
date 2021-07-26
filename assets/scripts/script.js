@@ -24,6 +24,17 @@ continueBtn.onclick = ()=> {
 
 let queCount = 0;
 
+let nextBtn = quizBox.querySelector(".next-btn");
+
+nextBtn.onclick = ()=> {
+    queCount++;
+    showQuestions(queCount);
+}
+
+/**
+ * questions and options 
+ * that will come from array
+ */
 function showQuestions(index) {
     const questionText = document.querySelector(".question-text");
     const optionList = document.querySelector(".option-list");

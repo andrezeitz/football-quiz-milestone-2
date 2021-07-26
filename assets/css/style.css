@@ -352,7 +352,7 @@ footer .next-btn:hover {
 
 .result-box .buttons {
     display: flex;
-    margin 20px 0;
+    margin: 20px 0;
 }
 
 .result-box .buttons button {
