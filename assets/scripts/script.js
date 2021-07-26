@@ -4,6 +4,7 @@ const ruleBox = document.querySelector(".rule-box");
 const exitBtn = ruleBox.querySelector(".buttons .exit");
 const continueBtn = ruleBox.querySelector(".buttons .continue");
 const quizBox = document.querySelector(".quiz-box");
+const timeCount = quizBox.querySelector(".timer .timer-second");
 
 const optionList = document.querySelector(".option-list");
 
@@ -21,12 +22,15 @@ exitBtn.onclick = ()=> {
 continueBtn.onclick = ()=> {
     ruleBox.classList.remove("activeInfo"); //rule box hidden
     quizBox.classList.add("activeQuiz"); //show quiz box 
-    showQuestions(0);
-    queCounter(1);
+    showQuestions(0); // show questions
+    queCounter(1); // show count for questions
+    startTimer(20); // set timer on 20 sec each new question
 }
 
 let queCount = 0;
 let queNumb = 1;
+let counter;
+let timeValue = 20;
 
 const nextBtn = quizBox.querySelector(".next-btn");
 
@@ -36,7 +40,9 @@ nextBtn.onclick = ()=> {
         queCount++;
         queNumb++;
         showQuestions(queCount);
-        queCounter(queNumb)
+        queCounter(queNumb);
+        clearInterval(counter);
+        startTimer(timeValue);
     } else {
         console.log("Finished!")
     }
@@ -66,6 +72,7 @@ function showQuestions(index) {
  * rest of the questions will show red color for wrong answers
  */
 function optionSelected(answer) {
+    clearInterval(counter); // stop time after click on an answer
     let userAns = answer.textContent;
     let correctAns = questions[queCount].answer;
     let allOptions = optionList.children.length;
@@ -76,7 +83,7 @@ function optionSelected(answer) {
         answer.classList.add("wrong");
         console.log("Answer is Wrong");
 
-        //if the answer is wrong select the correct answer
+        //if the answer is wrong then show the correct answer
         for (let i = 0; i < allOptions; i++) {
             if (optionList.children[i].textContent == correctAns) {
                 optionList.children[i].setAttribute("class", "option correct");            
@@ -90,14 +97,20 @@ for (let i = 0; i < allOptions; i++) {
     }
 }    
 
-
-
-
-
-
-
 function queCounter(index) {
     const bottomCueCounter = quizBox.querySelector(".total-que");
     let totalCuesCountTag = '<span><p>'+ index + '</p>of<p>' + questions.length +'</p>Questions</span>';
     bottomCueCounter.innerHTML = totalCuesCountTag;
 } 
+
+function startTimer(time) {
+    counter = setInterval(timer, 1000);
+    function timer() {
+        timeCount.textContent = time;
+        time--;
+        if (time < 0) {
+            clearInterval(counter);
+            timeCount.textContent = "0"; // show 0 when time is up
+        }
+    }
+}
