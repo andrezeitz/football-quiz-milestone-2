@@ -80,7 +80,7 @@ h1, h2, h3 {
     transform: translate(-50%, -50%);
 }
 
-.rule-box.activeInfo, .quiz-box.activeQuiz {
+.rule-box.activeInfo, .quiz-box.activeQuiz, .result-box.activeResult {
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%;) scale (0.9);
@@ -339,7 +339,9 @@ footer .next-btn:hover {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%;) scale (0.9);
 }
 
 .result-box .score {

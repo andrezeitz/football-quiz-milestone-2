@@ -33,6 +33,9 @@ let counter;
 let timeValue = 20;
 
 const nextBtn = quizBox.querySelector(".next-btn");
+const resultBox = document.querySelector(".result-box");
+const playAgain = resultBox.querySelector(".play-again .buttons");
+const quitQuiz = resultBox.querySelector(".quit .buttons");
 
 // when next button clicked 
 nextBtn.onclick = ()=> {
@@ -46,6 +49,7 @@ nextBtn.onclick = ()=> {
         nextBtn.style.display = "none";
     } else {
         console.log("Finished!")
+        showResultBox();
     }
 }
 
@@ -98,6 +102,12 @@ for (let i = 0; i < allOptions; i++) {
     }
     nextBtn.style.display = "block";
 }     
+
+function showResultBox() {
+    ruleBox.classList.remove("activeInfo"); //rule box hidden
+    quizBox.classList.remove("activeQuiz"); //show quiz box 
+    resultBox.classList.add("activeResult"); //show result box 
+}
 
 function queCounter(index) {
     const bottomCueCounter = quizBox.querySelector(".total-que");
