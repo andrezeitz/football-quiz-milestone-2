@@ -43,6 +43,7 @@ nextBtn.onclick = ()=> {
         queCounter(queNumb);
         clearInterval(counter);
         startTimer(timeValue);
+        nextBtn.style.display = "none";
     } else {
         console.log("Finished!")
     }
@@ -95,7 +96,8 @@ function optionSelected(answer) {
 for (let i = 0; i < allOptions; i++) {
     optionList.children[i].classList.add("disabled");
     }
-}    
+    nextBtn.style.display = "block";
+}     
 
 function queCounter(index) {
     const bottomCueCounter = quizBox.querySelector(".total-que");

@@ -269,7 +269,7 @@ h1, h2, h3 {
 .quiz-box section .option-list .option.disabled {
     pointer-events: none;
 }
-    
+
 .quiz-box .total-que {
     margin-left: 30px;
 }
@@ -310,6 +310,7 @@ section .total-que span p{
 }
 
 footer .next-btn {
+    display: none;
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
