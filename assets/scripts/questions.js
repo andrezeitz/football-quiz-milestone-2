@@ -100,7 +100,7 @@ let questions = [
     },
     {
         numb: 10,
-        question: "Liverpool have won six Champions Leagues and Manchester United have won three, but who are England's third most successful team in the competition with two titles?",
+        question: "Who are England's third most successful team in Champions League with two titles?",
         answer: "Nottingham Forest",
         options: [
             "West Ham",

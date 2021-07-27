@@ -385,5 +385,10 @@ footer .next-btn:hover {
 @media only screen and (max-width: 500px) {
     .rule-box, .quiz-box, .result-box {
         width: 380px;
+        margin-top: 50px;
+    }
+
+    .start-btn button {
+        font-size: 25px;
     }
   }
