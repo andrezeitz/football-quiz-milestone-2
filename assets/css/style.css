@@ -381,7 +381,8 @@ footer .next-btn:hover {
     background: rgb(33, 143, 57);
 }
 
-@media only screen and (max-width: 400px) {
+
+@media only screen and (max-width: 500px) {
     .rule-box, .quiz-box, .result-box {
         width: 380px;
     }
