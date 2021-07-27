@@ -8,17 +8,17 @@ const timeCount = quizBox.querySelector(".timer .timer-second");
 
 const optionList = document.querySelector(".option-list");
 
-//If start
+//if press start button
 startBtn.onclick = ()=> {
     ruleBox.classList.add("activeInfo"); //show info box
 }
 
-//If exit
+//if press exit button
 exitBtn.onclick = ()=> {
     ruleBox.classList.remove("activeInfo"); //info box hidden
 }
 
-//If continue
+//if press continue button
 continueBtn.onclick = ()=> {
     ruleBox.classList.remove("activeInfo"); //rule box hidden
     quizBox.classList.add("activeQuiz") //show quiz box 
@@ -28,9 +28,9 @@ continueBtn.onclick = ()=> {
 }
 
 let queCount = 0;
-let queNumb = 1;
+let queNumb = 1; // start from question 1
 let counter;
-let timeValue = 20;
+let timeValue = 20; // 20 sec each new question
 let userScore = 0;
 
 const nextBtn = quizBox.querySelector(".next-btn");
@@ -40,7 +40,7 @@ const quitQuiz = resultBox.querySelector(".buttons .quit");
 
 //quit the quiz after finished and return to start page
 quitQuiz.onclick = ()=> {
-    window.location.reload();
+    window.location.reload(); //reload window
 }
 
 // when next button clicked 
@@ -52,7 +52,7 @@ nextBtn.onclick = ()=> {
         queCounter(queNumb);
         clearInterval(counter);
         startTimer(timeValue);
-        nextBtn.style.display = "none";
+        nextBtn.style.display = "none"; //take away the next button before choosing an answer
     } else {
         console.log("Finished!")
         showResultBox();
@@ -64,12 +64,12 @@ nextBtn.onclick = ()=> {
  * that will come from array
  */
 function showQuestions(index) {
-    const questionText = document.querySelector(".question-text");
-    let queTag = '<span>'+ questions[index].numb + "." + questions[index].question +'</span>';
-    let optionTag = '<div class="option">' + questions[index].options[0] +'<span></span></div>'
-                    + '<div class="option">'+ questions[index].options[1] +'<span></span></div>'
-                    + '<div class="option">'+ questions[index].options[2] +'<span></span></div>'
-                    + '<div class="option">'+ questions[index].options[3] +'<span></span></div>';
+    const questionText = document.querySelector(".question-text"); 
+    let queTag = '<span>'+ questions[index].numb + "." + questions[index].question +'</span>'; // each questions with number attached to it
+    let optionTag = '<div class="option">' + questions[index].options[0] +'<span></span></div>' // question option 1
+                    + '<div class="option">'+ questions[index].options[1] +'<span></span></div>' // question option 2
+                    + '<div class="option">'+ questions[index].options[2] +'<span></span></div>' // question option 3
+                    + '<div class="option">'+ questions[index].options[3] +'<span></span></div>'; // question option 4
     questionText.innerHTML = queTag;
     optionList.innerHTML = optionTag;
     const option = optionList.querySelectorAll(".option");
@@ -79,8 +79,8 @@ function showQuestions(index) {
 } 
 
 /**
- * questions will show green color for correct answer
- * rest of the questions will show red color for wrong answers
+ * if correct option is clicked it will show green color and give 10 points
+ * if wrong answer is clicked it will show red color
  */
 function optionSelected(answer) {
     clearInterval(counter); // stop time after click on an answer
@@ -89,7 +89,8 @@ function optionSelected(answer) {
     let allOptions = optionList.children.length;
     if (userAns == correctAns) {
         userScore += 10;
-        console.log(userScore)
+        console.log(userScore);
+        showScoreCounter();
         answer.classList.add("correct");
         console.log("Answer is Correct");
     } else {
@@ -111,6 +112,10 @@ for (let i = 0; i < allOptions; i++) {
     nextBtn.style.display = "block";
 }     
 
+/**
+ * after finish the quiz the result box will show you how many points you get
+ * 10 points for each correct answer with a max of 100 points
+ */
 function showResultBox() {
     ruleBox.classList.remove("activeInfo"); //rule box hidden
     quizBox.classList.remove("activeQuiz"); //show quiz box 
@@ -121,15 +126,30 @@ function showResultBox() {
         let scoreTag = '<span>You got '+ userScore +' points out of 100</span>';
         scoreText.innerHTML = scoreTag;
     }
-    
 }
 
+/**
+ * show points after each question on top right corner
+ */
+function showScoreCounter() {
+    const scoreCounter = quizBox.querySelector(".score-counter");
+    let scorePoints = userScore ; 
+    scoreCounter.innerHTML = scorePoints;
+}
+
+
+/**
+ * counter to show how many questions left to play
+ */
 function queCounter(index) {
     const bottomCueCounter = quizBox.querySelector(".total-que");
-    let totalCuesCountTag = '<span><p>'+ index + '</p>of<p>' + questions.length +'</p>Questions</span>';
+    let totalCuesCountTag = '<span><p>'+ index + '</p>out of<p>' + questions.length +'</p> Questions</span>';
     bottomCueCounter.innerHTML = totalCuesCountTag;
 } 
 
+/**
+ * timer start at 20 seconds and will go down to 0, after that you cant click on any answer
+ */
 function startTimer(time) {
     counter = setInterval(timer, 1000);
     function timer() {

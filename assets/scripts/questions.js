@@ -1,57 +1,112 @@
 let questions = [
     {
         numb: 1,
-        question: "aaa",
-        answer: "d",
+        question: "Which player scored the fastest hat-trick in the Premier League?",
+        answer: "Sadio Mane",
         options: [
-            "a",
-            "b",
-            "c",
-            "d"
+            "Gareth Bale",
+            "Sergio Agüero",
+            "Sadio Mane",
+            "Mohammed Salah"
         ]
     },
     {
         numb: 2,
-        question: "bb",
-        answer: "aa",
+        question: "With 260 goals, who is the Premier League's all-time top scorer?",
+        answer: "Alan Shearer",
         options: [
-            "aa",
-            "bb",
-            "cc",
-            "ff"
+            "David Beckham",
+            "Alan Shearer",
+            "Christiano Ronaldo",
+            "Fredrik Ljungberg"
         ]
     },
     {
         numb: 3,
-        question: "cc",
-        answer: "bb",
+        question: "How many clubs competed in the inaugural Premier League season?",
+        answer: "22",
         options: [
-            "bb",
-            "b",
-            "b",
-            "bb"
+            "22",
+            "20",
+            "18",
+            "24"
         ]
     },
     {
         numb: 4,
-        question: "dd",
-        answer: "a",
+        question: "When was the inaugural Premier League season?",
+        answer: "1992-93",
         options: [
-            "a",
-            "v",
-            "c",
-            "s"
+            "1991-92",
+            "1989-90",
+            "1992-93",
+            "1995-96"
         ]
     },
     {
         numb: 5,
-        question: "ff",
-        answer: "55",
+        question: "Which country won the first ever World Cup in 1930?",
+        answer: "Uruguay",
         options: [
-            "55",
-            "1",
-            "34",
-            "33"
+            "France",
+            "Uruguay",
+            "Brazil",
+            "England"
+        ]
+    },
+    {
+        numb: 6,
+        question: "Which country has won the most World Cups?",
+        answer: "Brazil",
+        options: [
+            "Brazil",
+            "Mexico",
+            "Spain",
+            "England"
+        ]
+    },
+    {
+        numb: 7,
+        question: "Which club has won the most Champions League titles?",
+        answer: "Real Madrid",
+        options: [
+            "Liverpool",
+            "Milan",
+            "Barcelona",
+            "Real Madrid"
+        ]
+    },
+    {
+        numb: 8,
+        question: "Who is the Champions League's top goalscorer of all time?",
+        answer: "Cristiano Ronaldo",
+        options: [
+            "Rivaldo",
+            "Cristiano Ronaldo",
+            "Leo Messi",
+            "Alan Shearer"
+        ]
+    },
+    {
+        numb: 9,
+        question: "Which outfield player appeared in the Champions League final in three different decades?",
+        answer: "Ryan Giggs",
+        options: [
+            "Ryan Giggs",
+            "David Beckham",
+            "Ronaldo",
+            "David Trezeguet"
+        ]
+    },
+    {
+        numb: 10,
+        question: "Liverpool have won six Champions Leagues and Manchester United have won three, but who are England's third most successful team in the competition with two titles?",
+        answer: "Nottingham Forest",
+        options: [
+            "West Ham",
+            "Arsenal",
+            "Nottingham Forest",
+            "Tottenham"
         ]
     },
 ];

@@ -26,6 +26,7 @@
             <div class="rule-title">
                 <p>This are the rules for the quiz</p>
             </div>
+            <!--text for rules-->
             <div class="rule-list">
                 <div class="rule-text">1. You will get <span>10 points</span> for every correct answer.</div>
                 <div class="rule-text">2. You will have <span>20 seconds</span> to answer each question.</div>
@@ -41,45 +42,32 @@
         <!--quiz box-->
         <div class="quiz-box">
             <header>
-                <div class="title">Football Quiz</div>
                 <div class="timer">
                     <div class="time-text">Time Left</div>
                     <div class="timer-second">20</div>
                 </div>
+                <div class="score-box">
+                    <div class="score-text">Score</div>
+                    <div class="score-counter">0</div>
+                </div>
             </header>
             <section>
-                <!--questions-->
-                <div class="question-text">
-                   <!-- <span>Who won the Champions League 2018/19?</span>-->
-                </div>
-                <div class="option-list">
-                   <!-- <div class="option">
-                        <span>Arsenal</span>
-                    </div>
-                    <div class="option">
-                        <span>Real Madrid</span>
-                    </div>    
-                    <div class="option">
-                        <span>Liverpool</span>
-                    </div>
-                    <div class="option">
-                        <span>Paris Saint-Germain</span>
-                    </div>   --> 
-                </div>
-                <div class="total-que">
-                    <!-- <span><p>2</p>of<p>5</p>Questions</span> -->
-                </div>
+                <!--questions in quiz box-->
+                <div class="question-text"></div>
+                <div class="option-list"></div>
             </section>    
         
-            <!--footer-->
+            <!--footer in quiz box-->
             <footer>
-                <div id="progress-bar"></div>
+                <div class="total-que"></div>
                 <button class="next-btn">Next Question</button>
             </footer>
         </div>
+
+        <!-- result box with score-->
         <div class="result-box">
             <h2 class="result-text">Congratulations you completed the Quiz!</h2>
-            <div class="score"><!--<span>You got <p>2</p> correct answers out of <p>10</p> questions</span>--></div> 
+            <div class="score"></div> 
             <div class="icon">
                 <i class="fas fa-futbol"></i>
             </div>

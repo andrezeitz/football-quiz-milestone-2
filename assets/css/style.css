@@ -10,7 +10,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     color: rgb(24, 20, 20);
-    background-color: rgb(8, 92, 33)
+    background-color: rgb(8, 92, 33);
 }
 
 h1, h2, h3 {
@@ -161,7 +161,7 @@ h1, h2, h3 {
 
 .buttons button.exit {
     background: lightgray;
-    color: rgb(33, 143, 57);;
+    color: rgb(33, 143, 57);
 }
 
 /* quiz box */
@@ -189,32 +189,36 @@ h1, h2, h3 {
 }
 
 .quiz-box header .title {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
 }
 
-.quiz-box header .timer {
+.quiz-box header .timer, .score-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 140px;
     height: 45px;
-    background: rgb(33, 143, 57);
+    background: rgb(8, 92, 33);
     border-radius: 5px;
     padding: 0 8px;
     color: white;
 }
 
-.quiz-box header .timer .time-text {
+.quiz-box header .timer .time-text, .score-text {
     font-size: 17px;
     font-weight: 400;
     user-select: none;
 }
 
-.quiz-box header .timer .timer-second {
+.score-text {
+    margin-left: 10px;
+}    
+
+.quiz-box header .timer .timer-second, .score-counter {
     font-size: 18px;
     font-weight: 500;
-    background: rgb(8, 92, 33);
+    background: rgb(33, 143, 57);
     height: 30px;
     width: 45px;
     text-align: center;
@@ -241,13 +245,12 @@ h1, h2, h3 {
 }
 
 .quiz-box section .option-list .option {
-    background: rgb(33, 143, 57);
+    background: rgb(212, 255, 222);
     border: 1px solid lightgreen;
     border-radius: 5px;
     padding: 8px 15px;
     margin-bottom: 15px;
     font-size: 17px;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -255,33 +258,19 @@ h1, h2, h3 {
 }
 
 .quiz-box section .option-list .option:hover {
-    background: lightgreen;
+    border: 3px solid rgb(33, 143, 57);
 } 
 
 .quiz-box section .option-list .option.correct {
-    background:rgb(24, 20, 20)
+    background: rgb(33, 143, 57);
 }
 
 .quiz-box section .option-list .option.wrong {
-    background: red
+    background: red;
 }
 
 .quiz-box section .option-list .option.disabled {
     pointer-events: none;
-}
-
-.quiz-box .total-que {
-    margin-left: 30px;
-}
-
-.quiz-box section .total-que span {
-    display: flex;
-    user-select: none;
-}
-    
-section .total-que span p{
-    font-weight: 500;
-    padding: 0 5px;
 }
 
 /* quiz-box footer section */
@@ -295,18 +284,18 @@ section .total-que span p{
     justify-content: space-between;
 }
 
-#progress-bar {
-    width: 200px;
-    height: 30px;
-    border: 1px solid lightgreen;
-    border-radius: 50px;
-    overflow: hidden;
+.quiz-box footer .total-que span {
+    display: flex;
+    user-select: none;
+}
+    
+.quiz-box footer .total-que span p{
+    font-weight: 500;
+    padding: 0 4px
 }
 
-#progress-bar-full {
-    height: 100%;
-    background: lightgreen;
-    width: 0%;
+.quiz-box footer .total-que {
+    margin-left: 10px;
 }
 
 footer .next-btn {
@@ -324,7 +313,7 @@ footer .next-btn {
 }
 
 footer .next-btn:hover {
-    background: lightgreen;
+    background: rgb(33, 143, 57);
 }
 
 /* result box */
@@ -383,11 +372,11 @@ footer .next-btn:hover {
     cursor: pointer;
 }
 
-.result-box .buttons .play-again {
-    background: rgb(33, 143, 57);
+.result-box .buttons .quit {
+    background: rgb(8, 92, 33);
     color: white;
 }
 
-.result-box .buttons .play-again:hover {
-    background: rgb(8, 92, 33);
+.result-box .buttons .quit:hover {
+    background: rgb(33, 143, 57);
 }
