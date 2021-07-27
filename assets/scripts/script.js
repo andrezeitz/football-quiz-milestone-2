@@ -88,6 +88,8 @@ function optionSelected(answer) {
     let correctAns = questions[queCount].answer;
     let allOptions = optionList.children.length;
     if (userAns == correctAns) {
+        userScore += 10;
+        console.log(userScore)
         answer.classList.add("correct");
         console.log("Answer is Correct");
     } else {
@@ -114,10 +116,10 @@ function showResultBox() {
     quizBox.classList.remove("activeQuiz"); //show quiz box 
     resultBox.classList.add("activeResult"); //show result box 
 
-    let scoreText = resultBox.querySelector(".score");
-    if(userScore) {
-        let scoreTag = '<p>You scored <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span> points';
-        scoreText.innerHTML =  scoreTag;
+    const scoreText = resultBox.querySelector(".score");
+    if(userScore > 0) {
+        let scoreTag = '<span>You got '+ userScore +' points out of 100</span>';
+        scoreText.innerHTML = scoreTag;
     }
     
 }
