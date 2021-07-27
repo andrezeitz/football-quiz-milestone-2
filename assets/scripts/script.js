@@ -21,7 +21,7 @@ exitBtn.onclick = ()=> {
 //If continue
 continueBtn.onclick = ()=> {
     ruleBox.classList.remove("activeInfo"); //rule box hidden
-    quizBox.classList.add("activeQuiz"); //show quiz box 
+    quizBox.classList.add("activeQuiz") //show quiz box 
     showQuestions(0); // show questions
     queCounter(1); // show count for questions
     startTimer(20); // set timer on 20 sec each new question
@@ -31,11 +31,17 @@ let queCount = 0;
 let queNumb = 1;
 let counter;
 let timeValue = 20;
+let userScore = 0;
 
 const nextBtn = quizBox.querySelector(".next-btn");
 const resultBox = document.querySelector(".result-box");
-const playAgain = resultBox.querySelector(".play-again .buttons");
-const quitQuiz = resultBox.querySelector(".quit .buttons");
+const playAgain = resultBox.querySelector(".buttons .play-again"); 
+const quitQuiz = resultBox.querySelector(".buttons .quit");
+
+//quit the quiz after finished and return to start page
+quitQuiz.onclick = ()=> {
+    window.location.reload();
+}
 
 // when next button clicked 
 nextBtn.onclick = ()=> {
@@ -107,6 +113,13 @@ function showResultBox() {
     ruleBox.classList.remove("activeInfo"); //rule box hidden
     quizBox.classList.remove("activeQuiz"); //show quiz box 
     resultBox.classList.add("activeResult"); //show result box 
+
+    let scoreText = resultBox.querySelector(".score");
+    if(userScore) {
+        let scoreTag = '<p>You scored <span>'+ userScore +'</span> out of <span>'+ questions.length +'</span> points';
+        scoreText.innerHTML =  scoreTag;
+    }
+    
 }
 
 function queCounter(index) {
@@ -123,6 +136,19 @@ function startTimer(time) {
         if (time < 0) {
             clearInterval(counter);
             timeCount.textContent = "0"; // show 0 when time is up
+
+            let correctAns = questions[queCount].answer;
+            let allOptions = optionList.children.length;
+
+            for (let i = 0; i < allOptions; i++) {
+                if (optionList.children[i].textContent == correctAns) {
+                    optionList.children[i].setAttribute("class", "option correct");            
+                }
+            }
+            for (let i = 0; i < allOptions; i++) {
+                optionList.children[i].classList.add("disabled");
+                }
+                nextBtn.style.display = "block";
+            }    
         }
     }
-}
