@@ -384,6 +384,32 @@ footer .next-btn:hover {
     background: black;
 }
 
+.footer {
+        display: flex;
+        top: 100%;
+        position: absolute;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background: rgb(33, 143, 57);
+        height: 5rem;
+}
+
+.social {
+    width: 250px;
+}
+
+.social > li {
+    display: inline;
+}
+
+.social i {
+    font-size: 250%;
+    color: white;
+    padding: 5%;
+    margin: 1%;
+}
+
 
 @media only screen and (max-width: 500px) {
 
@@ -409,10 +435,10 @@ footer .next-btn:hover {
     }
 
     .rule-box .rule-title {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .rule-box .rule-list .rule-text {
-        font-size: 15px;
+        font-size: 16px;
     }
   }
