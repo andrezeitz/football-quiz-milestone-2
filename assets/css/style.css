@@ -37,21 +37,7 @@ h1, h2, h3 {
     font-size: 300%;
 }
 
-.navbar-links ul {
-    display: flex;
-    margin: 0;
-   
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
-.navbar-links li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-}
+/* play button */
 
 .play-button, .instructions {
     font-weight: 600;
@@ -78,6 +64,8 @@ h1, h2, h3 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* main containers with active status */ 
 
 .rule-box.activeInfo, .quiz-box.activeQuiz, .result-box.activeResult {
     opacity: 1;
@@ -143,6 +131,8 @@ h1, h2, h3 {
     border-top: 1px solid black;
 }
 
+/* continue button inside rule-box */
+
 .rule-box .buttons button {
     margin: 0 5px;
     height: 40px;
@@ -195,6 +185,8 @@ h1, h2, h3 {
     font-weight: 800;
 }
 
+/* timer on top left */
+
 .quiz-box header .timer, .score-box {
     display: flex;
     align-items: center;
@@ -207,6 +199,8 @@ h1, h2, h3 {
     color: white;
 }
 
+/* score counter top right */
+
 .quiz-box header .timer .time-text, .score-text {
     font-size: 17px;
     font-weight: 400;
@@ -215,7 +209,9 @@ h1, h2, h3 {
 
 .score-text {
     margin-left: 10px;
-}    
+} 
+
+/* timer and score style */
 
 .quiz-box header .timer .timer-second, .score-counter {
     font-size: 18px;
@@ -246,6 +242,8 @@ h1, h2, h3 {
     padding: 20px 0 10px 0;
     display: block;
 }
+
+/* quiz options style */
 
 .quiz-box section .option-list .option {
     background: rgb(212, 255, 222);
@@ -287,6 +285,8 @@ h1, h2, h3 {
     justify-content: space-between;
 }
 
+/* question counter on lower left */
+
 .quiz-box footer .total-que span {
     display: flex;
     user-select: none;
@@ -296,6 +296,8 @@ h1, h2, h3 {
     font-weight: 500;
     padding: 0 4px
 }
+
+/* continue button inside quiz box */
 
 footer .next-btn {
     display: none;
@@ -332,6 +334,8 @@ footer .next-btn:hover {
     transform: translate(-50%, -50%) scale (0.9);
 }
 
+/* total score */
+
 .result-box .score {
     display: flex;
     margin: 10px 0;
@@ -346,12 +350,17 @@ footer .next-btn:hover {
 
 .result-box .score span {
     color: rgb(8, 92, 33);
+    font-size: 20px;
 }
+
+/* icon of football inside result box */
 
 .result-box .icon {
     font-size: 150px;
     margin-bottom: 10px;
 }
+
+/* exit button inside result box */
 
 .result-box .buttons {
     display: flex;
@@ -364,7 +373,7 @@ footer .next-btn:hover {
     padding: 0 20px;
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     border-radius: 5px;
     border: 1px solid lightgreen;
@@ -379,6 +388,8 @@ footer .next-btn:hover {
 .result-box .buttons .quit:hover {
     background: black;
 }
+
+/* footer with social links */
 
 .footer {
     display: flex;
@@ -406,6 +417,7 @@ footer .next-btn:hover {
     margin: 1%;
 }
 
+/* media queries for mobile phones */
 
 @media only screen and (max-width: 500px) {
     
