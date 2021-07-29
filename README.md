@@ -1,6 +1,9 @@
 # Football Quiz
+Football Quiz is a fun game that really challange everyone playing it. It include 10 questions from the Premier League, Champions League and of course the World Cup. The questions is a good mix between different countrys. There is a maxium point system of 100 points to get the highest score.
 
-This website will be build with HTML, CSS and Javascript.
+This website can not be used as a template for a business since it's a project for educational purposes. This website will be build with HTML, CSS and Javascript.
+
+Live website: [Football Quiz](https://andrezeitz.github.io/football-quiz/)
 
 ## Table of Contents
 
@@ -33,8 +36,29 @@ This website will be build with HTML, CSS and Javascript.
 ## UX (User Experience)
 
 ### User Stories
+* As a football enthusiast
+  * I want quite hard questions
+  * I want question from different parts of the world
+  * I want the quiz to count the score so I can beat my friends
+  * I want to be able to contact the company on social media
+
+* As a user returning to the site
+  * I want to be able to do the quiz multiple times to get different answers and get the higest score
+  * I want the questions to change every month
+
+* As a user who does not know anything about football
+  * I want to learn more about football
+  * I want the site to show wich alternative is correct when I miss on a question for better learning
+  * I want some question to be little bit easier to be able to get some correct answers in the beggining
+  * I want to see how you play the game and it's rules
 
 ### Site Owner Goals
+* As a site owner I want to make a fun and enjoyable game
+* As a site owner I want to educate people about fotball history
+* As a site owner I want the site to be easy to navigate so that people will return and also share with friends
+* As a site owner I want to let people compete with there friends
+* As a site owner I want to promote football all over the world
+* As a site owner I want to make it free so everyone is able to play
 
 ## Design
 
