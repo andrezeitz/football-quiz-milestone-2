@@ -412,17 +412,10 @@ footer .next-btn:hover {
 
 
 @media only screen and (max-width: 500px) {
-
-    /*.rule-box, .quiz-box, .result-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }*/
     
     .rule-box, .quiz-box, .result-box {
         width: 380px;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .start-btn button {
