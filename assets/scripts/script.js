@@ -115,16 +115,32 @@ for (let i = 0; i < allOptions; i++) {
 /**
  * after finish the quiz the result box will show you how many points you get
  * 10 points for each correct answer with a max of 100 points
+ * also the title will change on how good you scored
  */
 function showResultBox() {
     ruleBox.classList.remove("activeInfo"); //rule box hidden
     quizBox.classList.remove("activeQuiz"); //show quiz box 
     resultBox.classList.add("activeResult"); //show result box 
 
+    // show how much you scored
     const scoreText = resultBox.querySelector(".score");
-    if(userScore > 0) {
+    if (userScore > 0) {
         let scoreTag = '<span>You got '+ userScore +' points out of 100</span>';
         scoreText.innerHTML = scoreTag;
+    }
+    // 3 different text titles will show on how you do on the quiz
+    const scoreTitle = resultBox.querySelector(".result-text");
+    if (userScore > 70) {
+        let scoreTag = 'That was a great result! <i class="far fa-smile-beam"></i>';
+        scoreTitle.innerHTML = scoreTag;
+    }
+    else if(userScore > 40) {
+        let scoreTag = 'That was not to bad! <i class="far fa-smile-wink"></i>';
+        scoreTitle.innerHTML = scoreTag;
+    }
+    else {
+        let scoreTag = 'That was not great! <i class="far fa-laugh-squint"></i>';
+        scoreTitle.innerHTML = scoreTag;
     }
 }
 
@@ -136,7 +152,6 @@ function showScoreCounter() {
     let scorePoints = userScore ; 
     scoreCounter.innerHTML = scorePoints;
 }
-
 
 /**
  * counter to show how many questions left to play
