@@ -95,7 +95,7 @@ h1, h2, h3 {
     border-radius: 10px;
     outline: none;
     border: none;
-    color: rgb(8, 92, 33);
+    color: black;
     cursor: pointer;
 }
 
@@ -115,9 +115,9 @@ h1, h2, h3 {
     align-items: center;
     height: 60px;
     width: 100%;
-    border-bottom: 1px solid #3a3a3a;
+    border-bottom: 1px solid black;
     padding: 0 35px;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -131,7 +131,7 @@ h1, h2, h3 {
 }
 
 .rule-box .rule-list .rule-text span {
-    color: rgb(8, 92, 33);
+    color: green;
     font-weight: 800;
 }
 
@@ -141,20 +141,24 @@ h1, h2, h3 {
     align-items: center;
     justify-content: flex-end;
     padding: 0 35px;
-    border-top: 1px solid lightgreen;
+    border-top: 1px solid black;
 }
 
 .rule-box .buttons button {
     margin: 0 5px;
     height: 40px;
     width: 100px;
-    border: 1px solid lightgreen;
-    background: rgb(33, 143, 57);
+    background: rgb(8, 92, 33);
     border-radius: 5px;
     color: white;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+    padding-top: 3px;
+}
+
+.rule-box .buttons button:hover {
+    background: black;
 }
 
 /* exit button inside rule-box */
@@ -199,7 +203,7 @@ h1, h2, h3 {
     justify-content: space-between;
     width: 140px;
     height: 45px;
-    background: rgb(8, 92, 33);
+    background: black;
     border-radius: 5px;
     padding: 0 8px;
     color: white;
@@ -258,7 +262,7 @@ h1, h2, h3 {
 }
 
 .quiz-box section .option-list .option:hover {
-    border: 3px solid rgb(33, 143, 57);
+    border: 2px solid rgb(12, 12, 12);
 } 
 
 .quiz-box section .option-list .option.correct {
@@ -313,7 +317,7 @@ footer .next-btn {
 }
 
 footer .next-btn:hover {
-    background: rgb(33, 143, 57);
+    background: black;
 }
 
 /* result box */
@@ -378,7 +382,7 @@ footer .next-btn:hover {
 }
 
 .result-box .buttons .quit:hover {
-    background: rgb(33, 143, 57);
+    background: black;
 }
 
 
