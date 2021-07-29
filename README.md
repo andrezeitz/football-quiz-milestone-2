@@ -72,7 +72,9 @@ The site follows a kind of football theme color theme to make people almost feel
 It features complementary Lincoln Green, Forest Green Web, Light Green, white and black to create a good contrast and improve readability.
 
 The colours chosen are:
-![color](https://user-images.githubusercontent.com/85236391/127470137-bdc5074e-f707-489b-8bfe-a2f2877198f3.png)
+
+![colors](https://user-images.githubusercontent.com/85236391/127561772-6f12afe2-5327-4a4c-a52b-d064aaa049c6.png)
+
 
 ### Wireframe
 
@@ -102,6 +104,10 @@ The colours chosen are:
 * Maps-website.com
 
 ### Contrast Checker
+All colours was check in contrast checker and pass the test. The only color that diden't pass for small text was #1E8534 as background to #FFF, but I only use this setup for large text in header and footer.
+
+![contrast](https://user-images.githubusercontent.com/85236391/127561156-ab4e9578-d478-4cbd-9239-5c7586b649ae.png)
+
 
 ## Features
 The website has the following features:
