@@ -63,14 +63,19 @@ Live website: [Football Quiz](https://andrezeitz.github.io/football-quiz/)
 ## Design
 
 ### Fonts
+I have chosen PT Sans for the header and logo as it is easy to read and has sufficient contrast to the main body font. The small caps style is used by Open Sans that I feelt look very clean in the quiz.!
 
 ### Colours
+The site follows a kind of football theme color theme to make people almost feel like they are on that football pitch.
+It features complementary Lincoln Green, Forest Green Web, Light Green, white and black to create a good contrast and improve readability.
+
+The colours chosen are:
+![color](https://user-images.githubusercontent.com/85236391/127470137-bdc5074e-f707-489b-8bfe-a2f2877198f3.png)
 
 ### Wireframe
 
 #### Desktop
 ![Web](https://user-images.githubusercontent.com/85236391/126618344-532c82dc-f15f-42e0-9eeb-06395957719e.png)
-
 
 #### Mobile
 ![Mobile](https://user-images.githubusercontent.com/85236391/126618362-5b396c62-4da9-4f07-9460-98e037e79d42.png)
@@ -78,8 +83,21 @@ Live website: [Football Quiz](https://andrezeitz.github.io/football-quiz/)
 ## Technologies
 
 ### Languages
+* HTML
+* CSS
+* JavaScript
 
-### Tools
+### Frameworks and Tools
+* GitHub
+* Gitpod
+* Google Fonts
+* Font Awesome
+* Flex box
+* W3C HTML Validator
+* H3C CSS Validator
+* Am I responsive
+* WebAim
+* Maps-website.com
 
 ### Contrast Checker
 
