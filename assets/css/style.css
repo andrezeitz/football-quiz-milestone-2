@@ -235,6 +235,7 @@ h1, h2, h3 {
 .quiz-box section {
     padding: 25px 30px 0 30px;
     background: white;
+    border-bottom: 1px solid lightgreen;
 }
 
 .quiz-box section .question-text {
@@ -385,18 +386,18 @@ footer .next-btn:hover {
 }
 
 .footer {
-        display: flex;
-        top: 100%;
-        position: absolute;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        background: rgb(33, 143, 57);
-        height: 5rem;
+    display: flex;
+    top: 100%;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgb(33, 143, 57);
+    height: 5rem;
 }
 
 .social {
-    width: 250px;
+    width: 190px;
 }
 
 .social > li {
