@@ -217,12 +217,13 @@ h1, h2, h3 {
     font-size: 18px;
     font-weight: 500;
     background: rgb(33, 143, 57);
-    height: 30px;
-    width: 45px;
+    height: 35px;
+    width: 35px;
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
     border-radius: 5px;
     user-select: none;
+    border-radius: 50%;
 }
 
 /* quiz-box question section */
@@ -393,7 +394,7 @@ footer .next-btn:hover {
 
 .footer {
     display: flex;
-    top: 100%;
+    bottom: 0;
     position: absolute;
     width: 100%;
     justify-content: center;
