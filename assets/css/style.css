@@ -75,7 +75,7 @@ h1, h2, h3 {
 
 .start-btn, .rule-box, .quiz-box, .result-box {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
