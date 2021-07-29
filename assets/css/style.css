@@ -75,7 +75,7 @@ h1, h2, h3 {
 
 .start-btn, .rule-box, .quiz-box, .result-box {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -384,19 +384,24 @@ footer .next-btn:hover {
 
 @media only screen and (max-width: 500px) {
 
-    .start-btn, .rule-box, .quiz-box, .result-box {
+    /*.rule-box, .quiz-box, .result-box {
         position: absolute;
-        top: 60%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }
+    }*/
     
     .rule-box, .quiz-box, .result-box {
         width: 380px;
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .start-btn button {
         font-size: 25px;
+        background: white;
+    }
+
+    .quiz-box section .question-text {
+        font-size: 20px;
     }
   }
