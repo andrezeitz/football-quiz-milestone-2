@@ -40,7 +40,6 @@ h1, h2, h3 {
 .navbar-links ul {
     display: flex;
     margin: 0;
-    padding: 0;
    
 }
 
@@ -83,7 +82,7 @@ h1, h2, h3 {
 .rule-box.activeInfo, .quiz-box.activeQuiz, .result-box.activeResult {
     opacity: 1;
     pointer-events: auto;
-    transform: translate(-50%, -50%;) scale (0.9);
+    transform: translate(-50%, -50%) scale (0.9);
     z-index: 5;
 }
 
@@ -107,7 +106,7 @@ h1, h2, h3 {
     border-radius: 10px;
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%;) scale (0.9);
+    transform: translate(-50%, -50%) scale (0.9);
 }
 
 .rule-box .rule-title {
@@ -175,7 +174,7 @@ h1, h2, h3 {
     border-radius: 10px;
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%;) scale (0.9);
+    transform: translate(-50%, -50%) scale (0.9);
 }
 
 /* quiz-box header section */
@@ -298,10 +297,6 @@ h1, h2, h3 {
     padding: 0 4px
 }
 
-.quiz-box footer .total-que {
-    margin-left: 10px;
-}
-
 footer .next-btn {
     display: none;
     height: 40px;
@@ -334,7 +329,7 @@ footer .next-btn:hover {
     flex-direction: column;
     opacity: 0;
     pointer-events: none;
-    transform: translate(-50%, -50%;) scale (0.9);
+    transform: translate(-50%, -50%) scale (0.9);
 }
 
 .result-box .score {
@@ -416,7 +411,7 @@ footer .next-btn:hover {
     
     .rule-box, .quiz-box, .result-box {
         width: 380px;
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .start-btn button {
