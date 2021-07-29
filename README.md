@@ -5,6 +5,9 @@ This website can not be used as a template for a business since it's a project f
 
 Live website: [Football Quiz](https://andrezeitz.github.io/football-quiz/)
 
+![responsive](https://user-images.githubusercontent.com/85236391/127551315-d0c556d7-97a8-4f1c-b771-42ef3b1aa14c.png)
+
+
 ## Table of Contents
 
 * [UX (User Experience)](#ux-user-experience)
