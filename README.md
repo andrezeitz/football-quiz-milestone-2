@@ -19,7 +19,7 @@ Live website: [Football Quiz](https://andrezeitz.github.io/football-quiz/)
   * [Wireframe](#mobile)
 * [Technologies](#technologies)
   * [Languages](#languages)
-  * [Tools](#tools)
+  * [Frameworks and Tools](#frameworks-and-tools)
   * [Contrast Checker](#contrast-checker)
 * [Features](#features)
 * [Testing](#testing)
@@ -27,7 +27,6 @@ Live website: [Football Quiz](https://andrezeitz.github.io/football-quiz/)
   * [HTML](#html)
   * [CSS](#css)
   * [Java Script](#java-script)
-  * [Frameworks and Tools](#frameworks-and-tools)
   * [Different Screen Size](#different-screen-size)
 * [Issues found during site development](#issues-found-during-site-development)
 * [Deployment](#deployment)
@@ -105,33 +104,59 @@ The colours chosen are:
 ### Contrast Checker
 
 ## Features
+The website has the following features:
+### Navigation bar
+Navigation bar is visible on the top of the website with a logo that is clickable to update the site. The navigation bar and logo will become a bit smaller on mobile devices to make it look good.
+![navbar](https://user-images.githubusercontent.com/85236391/127557595-db364b6d-df26-4d10-a461-3ef01d02a41c.png)
+
+### Home
+The home page start with a big "Start Quiz" button in the middle of the screen.
+![play](https://user-images.githubusercontent.com/85236391/127558544-f532547b-aa26-4fa1-9e49-d7b8ac0e6ca0.png)
+
+Once the start button is clicked the rules of the quiz will show up. Here you can read the 5 main rules of the quiz then decide to start the quiz by clicking on the continue button or exit the quiz by the exit button.
+![rules](https://user-images.githubusercontent.com/85236391/127558645-c550928c-3571-4b78-94c7-c7730a41ac29.png)
+
+When you click on the continue button the quiz will start. On the top left side you will see the time counting down from 20 seconds. You need to make a decision before times up. On the top right side you will see you score live. You will get 10 points for each correct answer. In the middle you will see a queston with 4 different options to choose from. Finaly on the bottom left you will see how many questions there are in total and also what question you are on right now. Once you click on an answer a "Next Question" button will show up on the bottom right side.
+![questions](https://user-images.githubusercontent.com/85236391/127559308-d85307fe-5b95-4916-9f03-2aab64c6a224.png)
+
+After finishing the quiz you will be directed to a result page showing your total score. There is 3 different text alternative depending on how you scored. On the bottom there is a "Exit Quiz" button to exit the quiz.
+![high score](https://user-images.githubusercontent.com/85236391/127559529-1d4ee3b5-ff24-4e07-bcc8-93b1dab15d93.png)
+![medium score](https://user-images.githubusercontent.com/85236391/127559536-5d2fa8f5-49b6-4f0b-808c-b2f6925486bc.png)
+![low score](https://user-images.githubusercontent.com/85236391/127559547-71dfccac-7045-4722-ad18-ba4025ac33cd.png)
+
+### Footer
+At the bottom of the site there is a footer with social media links to be able to contact the company.
+![footer](https://user-images.githubusercontent.com/85236391/127559713-c72f930b-d81a-454b-88ef-e66a57be9d74.png)
 
 ## Testing
 
 ### Code Validation
-The W3C Markup Validation Service was used to validate the HTML page of the project. On the first validation some issues were flagged and these were resolved as explained below:
-
-
-#### HTML
+### HTML
 The W3C Markup Validation Service was used to validate the HTML page of the project. No errors or warnings to show.
 ![html](https://user-images.githubusercontent.com/85236391/127552288-e91dbce2-41ed-420f-908c-fa4c29362bc5.png)
 
-#### CSS
+### CSS
 The W3C CSS Validation Service was used to validate the CSS file used for the project. No errors or warnings to show.
 ![css](https://user-images.githubusercontent.com/85236391/127553644-f396b462-a3ca-43c8-b995-2c3b34858098.png)
 
-#### Java Script
+### Java Script
 Syntex Validator was used to validate the Java Script files used for the project. No errors or warnings to show.
 ![js](https://user-images.githubusercontent.com/85236391/127554806-76d91d8c-793d-436f-9c5c-374d61be2e0d.png)
 
-#### Frameworks and Tools 
-
-#### Different Screen Size
+### Different Screen Size
 I was using Chrome as my main browser and the website have been tested on my iPhone 11 Pro and Macbook Pro 13¨.
 
 I also tested the website inside of Chrome Dev Tools. With different px sizes to make sure the website will work on all different devices.
 
-## Issues found during site development
+### Issues found during site development
+* I had a problem that the "Start Quiz" button would not show with any background on ONLY iPhones. Desktop and Andriod phones could see it. I fixed the problem to add a white background to the start button in media media queries for mobile.
+![IMG_0202](https://user-images.githubusercontent.com/85236391/127555626-d86c72c5-5b37-4a3e-9fd0-3f5146c5016a.PNG)
+
+* I had a problem to get the score system to work perfectly in the beggining. I forgot to define the "userScore" inside of the function "optionSelected" and it made the score text to not show up inside of the result box.
+![score](https://user-images.githubusercontent.com/85236391/127556369-35ba696c-a68a-4402-a89f-b3b30886d7dd.png)
+
+* Also I had some problem to get the quiz box to fit perfect in between the header and footer on mobile devices. I solved that problem to inside the media queries make the font-size smaller inside the quiz box and also made the header and footer smaller to better fit mobile divices.
+![quiz](https://user-images.githubusercontent.com/85236391/127556772-5955a70c-380f-461d-bf58-0cc1645a0b33.png)
 
 ## Deployment
 The site was developed on Gitpod, using GitHub for version control and hosting the repository and final site. The repository for this project, and the associated workspace, was created from the Code Institute template.
