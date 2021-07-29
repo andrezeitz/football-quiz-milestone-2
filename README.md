@@ -109,16 +109,27 @@ The colours chosen are:
 ## Testing
 
 ### Code Validation
+The W3C Markup Validation Service was used to validate the HTML page of the project. On the first validation some issues were flagged and these were resolved as explained below:
+
 
 #### HTML
+The W3C Markup Validation Service was used to validate the HTML page of the project. No errors or warnings to show.
+![html](https://user-images.githubusercontent.com/85236391/127552288-e91dbce2-41ed-420f-908c-fa4c29362bc5.png)
 
 #### CSS
+The W3C CSS Validation Service was used to validate the CSS file used for the project. No errors or warnings to show.
+![css](https://user-images.githubusercontent.com/85236391/127553644-f396b462-a3ca-43c8-b995-2c3b34858098.png)
 
 #### Java Script
+Syntex Validator was used to validate the Java Script files used for the project. No errors or warnings to show.
+![js](https://user-images.githubusercontent.com/85236391/127554806-76d91d8c-793d-436f-9c5c-374d61be2e0d.png)
 
 #### Frameworks and Tools 
 
 #### Different Screen Size
+I was using Chrome as my main browser and the website have been tested on my iPhone 11 Pro and Macbook Pro 13¨.
+
+I also tested the website inside of Chrome Dev Tools. With different px sizes to make sure the website will work on all different devices.
 
 ## Issues found during site development
 
