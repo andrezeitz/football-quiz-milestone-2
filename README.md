@@ -107,19 +107,24 @@ The colours chosen are:
 The website has the following features:
 ### Navigation bar
 Navigation bar is visible on the top of the website with a logo that is clickable to update the site. The navigation bar and logo will become a bit smaller on mobile devices to make it look good.
+
 ![navbar](https://user-images.githubusercontent.com/85236391/127557595-db364b6d-df26-4d10-a461-3ef01d02a41c.png)
 
 ### Home
 The home page start with a big "Start Quiz" button in the middle of the screen.
+
 ![play](https://user-images.githubusercontent.com/85236391/127558544-f532547b-aa26-4fa1-9e49-d7b8ac0e6ca0.png)
 
 Once the start button is clicked the rules of the quiz will show up. Here you can read the 5 main rules of the quiz then decide to start the quiz by clicking on the continue button or exit the quiz by the exit button.
+
 ![rules](https://user-images.githubusercontent.com/85236391/127558645-c550928c-3571-4b78-94c7-c7730a41ac29.png)
 
 When you click on the continue button the quiz will start. On the top left side you will see the time counting down from 20 seconds. You need to make a decision before times up. On the top right side you will see you score live. You will get 10 points for each correct answer. In the middle you will see a queston with 4 different options to choose from. Finaly on the bottom left you will see how many questions there are in total and also what question you are on right now. Once you click on an answer a "Next Question" button will show up on the bottom right side.
+
 ![questions](https://user-images.githubusercontent.com/85236391/127559308-d85307fe-5b95-4916-9f03-2aab64c6a224.png)
 
 After finishing the quiz you will be directed to a result page showing your total score. There is 3 different text alternative depending on how you scored. On the bottom there is a "Exit Quiz" button to exit the quiz.
+
 ![high score](https://user-images.githubusercontent.com/85236391/127559529-1d4ee3b5-ff24-4e07-bcc8-93b1dab15d93.png)
 ![medium score](https://user-images.githubusercontent.com/85236391/127559536-5d2fa8f5-49b6-4f0b-808c-b2f6925486bc.png)
 ![low score](https://user-images.githubusercontent.com/85236391/127559547-71dfccac-7045-4722-ad18-ba4025ac33cd.png)
