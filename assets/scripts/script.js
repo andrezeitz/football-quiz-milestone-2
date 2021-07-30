@@ -53,13 +53,13 @@ nextBtn.onclick = ()=> {
         queCounter(queNumb);
         clearInterval(counter);
         startTimer(timeValue);
+        updateButtonTextForFinalQuestion(); // change button at the end to "Show result"
         nextBtn.style.display = "none"; //take away the next button before choosing an answer
-    } else {
+        } else {
         console.log("Finished!")
         showResultBox();
     }
 }
-
 
 /**
  * questions and options 
@@ -87,6 +87,14 @@ function shuffleArray(questions) {
     for (let i = questions.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [questions[i], questions[j]] = [questions[j], questions[i]];
+    }
+}    
+
+
+function updateButtonTextForFinalQuestion() {
+    if (queCount > questions.length - 2) {
+        // change button text
+        document.querySelector('.next-btn').innerText = 'Show Result';
     }
 }
 
@@ -173,7 +181,7 @@ function queCounter(index) {
     const bottomCueCounter = quizBox.querySelector(".total-que");
     let totalCuesCountTag = '<span><p>'+ index + '</p>out of<p>' + questions.length +'</p> Questions</span>';
     bottomCueCounter.innerHTML = totalCuesCountTag;
-} 
+}
 
 /**
  * timer start at 20 seconds and will go down to 0, after that you cant click on any answer
@@ -202,4 +210,3 @@ function startTimer(time) {
             }    
         }
     }
- 
