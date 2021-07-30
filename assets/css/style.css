@@ -38,25 +38,6 @@ h1, h2, h3 {
     font-size: 300%;
 }
 
-/* play button */
-
-.play-button, .instructions {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    border-radius: 34px;
-    padding: 10px;
-    min-width: unset;
-    margin: 15px;
-    border: 2px solid white;
-}
-
-.play-button:hover, .instructions:hover {
-    border-color: rgb(216, 61, 61);
-    background-color: rgb(216, 61, 61);
-
-}
-
 /* main containers for each box */
 
 .start-btn, .rule-box, .quiz-box, .result-box {
@@ -73,7 +54,6 @@ h1, h2, h3 {
     pointer-events: auto;
     z-index: 5;
 }
-
 
 /* start button first page */
 

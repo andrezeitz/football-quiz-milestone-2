@@ -22,13 +22,14 @@ exitBtn.onclick = ()=> {
 continueBtn.onclick = ()=> {
     ruleBox.classList.remove("activeInfo"); //rule box hidden
     quizBox.classList.add("activeQuiz") //show quiz box 
+    shuffleArray(questions); // shuffle questions random
     showQuestions(0); // show questions
     queCounter(1); // show count for questions
     startTimer(20); // set timer on 20 sec each new question
 }
 
 let queCount = 0;
-let queNumb = 1; // start from question 1
+let queNumb = 1; // start from question 1 
 let counter;
 let timeValue = 20; // 20 sec each new question
 let userScore = 0;
@@ -59,13 +60,14 @@ nextBtn.onclick = ()=> {
     }
 }
 
+
 /**
  * questions and options 
  * that will come from array
  */
 function showQuestions(index) {
     const questionText = document.querySelector(".question-text"); 
-    let queTag = '<span>'+ questions[index].numb + "." + questions[index].question +'</span>'; // each questions with number attached to it
+    let queTag = '<span>'+ questions[index].question +'</span>'; // each questions with number attached to it
     let optionTag = '<div class="option">' + questions[index].options[0] +'<span></span></div>' // question option 1
                     + '<div class="option">'+ questions[index].options[1] +'<span></span></div>' // question option 2
                     + '<div class="option">'+ questions[index].options[2] +'<span></span></div>' // question option 3
@@ -79,6 +81,16 @@ function showQuestions(index) {
 } 
 
 /**
+ *  Randomize array in-place using Durstenfeld shuffle algorithm
+ */ 
+function shuffleArray(questions) {
+    for (let i = questions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [questions[i], questions[j]] = [questions[j], questions[i]];
+    }
+}
+
+/**
  * if correct option is clicked it will show green color and give 10 points
  * if wrong answer is clicked it will show red color
  */
@@ -87,6 +99,7 @@ function optionSelected(answer) {
     let userAns = answer.textContent;
     let correctAns = questions[queCount].answer;
     let allOptions = optionList.children.length;
+    console.log(userAns, correctAns);
     if (userAns == correctAns) {
         userScore += 10;
         console.log(userScore);
@@ -189,3 +202,4 @@ function startTimer(time) {
             }    
         }
     }
+ 

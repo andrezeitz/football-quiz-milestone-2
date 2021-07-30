@@ -1,7 +1,7 @@
 //An array of questions and answers
 let questions = [
     {
-        numb: 1,
+        numb: 0,
         question: "Which player scored the fastest hat-trick in the Premier League?",
         answer: "Sadio Mane",
         options: [
