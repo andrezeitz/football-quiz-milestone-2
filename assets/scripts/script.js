@@ -81,7 +81,7 @@ function showQuestions(index) {
 } 
 
 /**
- *  Randomize array in-place using Durstenfeld shuffle algorithm
+ *  randomize array in-place using Durstenfeld shuffle algorithm
  */ 
 function shuffleArray(questions) {
     for (let i = questions.length - 1; i > 0; i--) {
@@ -90,6 +90,9 @@ function shuffleArray(questions) {
     }
 }    
 
+/**
+ * after the 10th question the next button will change to show result
+ */
 
 function updateButtonTextForFinalQuestion() {
     if (queCount > questions.length - 2) {
