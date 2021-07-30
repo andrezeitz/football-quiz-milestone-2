@@ -75,7 +75,6 @@ The colours chosen are:
 
 ![colors](https://user-images.githubusercontent.com/85236391/127561772-6f12afe2-5327-4a4c-a52b-d064aaa049c6.png)
 
-
 ### Wireframe
 
 #### Desktop
@@ -96,12 +95,11 @@ The colours chosen are:
 * Gitpod
 * Google Fonts
 * Font Awesome
-* Flex box
 * W3C HTML Validator
 * H3C CSS Validator
+* JS Validator
 * Am I responsive
 * WebAim
-* Maps-website.com
 
 ### Contrast Checker
 All colours was check in contrast checker and pass the test. The only color that diden't pass for small text was #1E8534 as background to #FFF, but I only use this setup for large text in header and footer.
@@ -125,7 +123,7 @@ Once the start button is clicked the rules of the quiz will show up. Here you ca
 
 ![rules](https://user-images.githubusercontent.com/85236391/127558645-c550928c-3571-4b78-94c7-c7730a41ac29.png)
 
-When you click on the continue button the quiz will start. On the top left side you will see the time counting down from 20 seconds. You need to make a decision before times up. On the top right side you will see you score live. You will get 10 points for each correct answer. In the middle you will see a queston with 4 different options to choose from. When you click an option, the correct answer will show in green and if you clicked on the wrong it will show red. Finaly on the bottom left you will see how many questions there are in total and also what question you are on right now. Once you click on an answer a "Next Question" button will show up on the bottom right side.
+When you click on the continue button the quiz will start. On the top left side you will see the time counting down from 20 seconds. You need to make a decision before times up. On the top right side you will see you score live. You will get 10 points for each correct answer. In the middle you will see a queston with 4 different options to choose from. When you click an option, the correct answer will show in green and if you clicked on the wrong it will show red. Finaly on the bottom left you will see how many questions there are in total and also what question you are on right now. Once you click on an answer a "Next Question" button will show up on the bottom right side. When you have answered all 10 question the button will change to "Show Result"
 
 ![quizz](https://user-images.githubusercontent.com/85236391/127562420-aa7a9dc4-8233-4395-94a4-cfb8227cd490.png)
 
@@ -137,6 +135,7 @@ After finishing the quiz you will be directed to a result page showing your tota
 
 ### Footer
 At the bottom of the site there is a footer with social media links to be able to contact the company.
+
 ![footer](https://user-images.githubusercontent.com/85236391/127559713-c72f930b-d81a-454b-88ef-e66a57be9d74.png)
 
 ## Testing
@@ -144,14 +143,17 @@ At the bottom of the site there is a footer with social media links to be able t
 ### Code Validation
 ### HTML
 The W3C Markup Validation Service was used to validate the HTML page of the project. No errors or warnings to show.
+
 ![html](https://user-images.githubusercontent.com/85236391/127552288-e91dbce2-41ed-420f-908c-fa4c29362bc5.png)
 
 ### CSS
 The W3C CSS Validation Service was used to validate the CSS file used for the project. No errors or warnings to show.
+
 ![css](https://user-images.githubusercontent.com/85236391/127553644-f396b462-a3ca-43c8-b995-2c3b34858098.png)
 
 ### Java Script
 Syntex Validator was used to validate the Java Script files used for the project. No errors or warnings to show.
+
 ![js](https://user-images.githubusercontent.com/85236391/127554806-76d91d8c-793d-436f-9c5c-374d61be2e0d.png)
 
 ### Different Screen Size
@@ -161,34 +163,41 @@ I also tested the website inside of Chrome Dev Tools. With different px sizes to
 
 ### Issues found during site development
 * I had a problem that the "Start Quiz" button would not show with any background on ONLY iPhones. Desktop and Andriod phones could see it. I fixed the problem to add a white background to the start button in media media queries for mobile.
+
 ![IMG_0202](https://user-images.githubusercontent.com/85236391/127555626-d86c72c5-5b37-4a3e-9fd0-3f5146c5016a.PNG)
 
 * I had a problem to get the score system to work perfectly in the beggining. I forgot to define the "userScore" inside of the function "optionSelected" and it made the score text to not show up inside of the result box.
+
 ![score](https://user-images.githubusercontent.com/85236391/127556369-35ba696c-a68a-4402-a89f-b3b30886d7dd.png)
 
 * Also I had some problem to get the quiz box to fit perfect in between the header and footer on mobile devices. I solved that problem to inside the media queries make the font-size smaller inside the quiz box and also made the header and footer smaller to better fit mobile divices.
+
 ![quiz](https://user-images.githubusercontent.com/85236391/127556772-5955a70c-380f-461d-bf58-0cc1645a0b33.png)
 
 ## Deployment
 The site was developed on Gitpod, using GitHub for version control and hosting the repository and final site. The repository for this project, and the associated workspace, was created from the Code Institute template.
 
 ### GitHub Pages
-1. Log in to GitHub and navigate to this project's respository [Fotball Quiz](https://github.com/andrezeitz/Muscle-Gym)
+1. Log in to GitHub and navigate to this project's respository [Fotball Quiz](https://github.com/andrezeitz/Football-Quiz)
 2. On the navigation bar of the repository, go to "Settings" tab
 3. Find on the left-hand side menu and locate "Pages"
 4. Under "Source", select Branch: main and click Save
 5. The page will refresh automatically and a link to the page is published [Website](https://andrezeitz.github.io/football-quiz/)
 
 ### Cloning the project locally
-1. Log in to GitHub and navigate to this project's respository [Fotball Quiz](https://github.com/andrezeitz/Muscle-Gym)
+1. Log in to GitHub and navigate to this project's respository [Fotball Quiz](https://github.com/andrezeitz/Football-Quiz)
 2. Click on "Code" and then copy the HTTPS address.
 3. Open Git terminal
 4. Type git clone and paste in the URL copied in step 2 and press enter
 
 ### Forking the repository
-1. Log in to GitHub and navigate to this project's respository [Fotball Quiz](https://github.com/andrezeitz/Muscle-Gym)
+1. Log in to GitHub and navigate to this project's respository [Fotball Quiz](https://github.com/andrezeitz/Football-Quiz)
 2. In the top right of the page, below your profile you should see a "Fork" button. Simply click on this.
 3. A copy of the repository will then be added to your own Repositories Page.
 
 ## Credits
-* I learned how to make a quiz from these two links [Youtube](https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=WL&index=1) [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k)
+* I learned the fundamentals on how to make a quiz and took some ideas from these two [Youtube](https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=WL&index=1) [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k) channels
+* I find out how to randomize the quiz questions from this tread on [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+* I read this tread on [Stack Overflow](https://stackoverflow.com/questions/7035842/how-to-change-the-buttons-text-using-javascript/41274932#41274932) and understood how to change buttons.
+* I use [W3School](https://www.w3schools.com/js/js_operators.asp) to check different operators.
+* Also this for looping [W3School](https://www.w3schools.com/js/js_loop_for.asp)
