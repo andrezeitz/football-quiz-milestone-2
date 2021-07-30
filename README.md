@@ -140,6 +140,55 @@ At the bottom of the site there is a footer with social media links to be able t
 
 ## Testing
 
+1. As a user, I want to easily determine what kind of website it is.
+* Result: TEST PASSED
+   * It's very clear that the site is a quiz for football on the name but also the green color theme on the site. The logo include a picture of a football to really get the feeling of the sport.
+
+![navbar](https://user-images.githubusercontent.com/85236391/127652042-b12263cd-d8e4-4ef3-9724-169aa0bee059.png)
+
+2. As a user, I want it to be a challenged on my fotball skills.
+* Result: TEST PASSED
+  * This is a very hard quiz with a average first score of 40 points out of 100. Users like to play the quiz multible times.
+
+![40 points](https://user-images.githubusercontent.com/85236391/127652573-b9dd87a6-4664-48bd-ada8-8f87673cf16a.png)
+
+3. As a user, I want to be able to see my score as I play the game.
+* Result: TEST PASSED
+  * Users can see there live score on the top right corner as they play the game.
+
+![scoree](https://user-images.githubusercontent.com/85236391/127652755-b040714b-9f14-4a74-854a-835efee8e769.png)
+
+4. As a user, I want to see how much time I have left on each question.
+* Result: TEST PASSED
+  * Users can see how much time they have left on the top left corner as they play the game.
+
+![timee](https://user-images.githubusercontent.com/85236391/127653052-6572e7a9-0d0e-4480-9059-3173dee7883b.png)
+
+5. As a user, I want to know how many questions is left while playing.
+* Result: TEST PASSED
+  * Users can see how many questions is left to play at the bottom left corner.
+
+![quees](https://user-images.githubusercontent.com/85236391/127653753-6156a66a-0d22-4e22-a1ec-65e1e78f08fb.png)
+
+6. As a user, I want to know the rules before start playing.
+* Result: TEST PASSED
+  * When the user press the start button the rules will show up before the game starts.
+
+![rules](https://user-images.githubusercontent.com/85236391/127653199-d14a744a-c607-4f13-a542-1c27fe258d96.png)
+
+7. As a user, I want to see my final score after finish playing.
+* Result: TEST PASSED
+  * After the game is finish the user will be taken to a result page showing the final result.
+
+![high score](https://user-images.githubusercontent.com/85236391/127653388-c8206593-528d-460a-99c1-87cc6b85637a.png)
+
+8. As a user, I want to be able to contact the company on social media.
+* Result: TEST PASSED
+  * Users can easy find the social media pages in the footer.
+
+![footer](https://user-images.githubusercontent.com/85236391/127653499-c2b5e6b6-4953-4d03-8af7-7506bd79711a.png)
+
+
 ### Code Validation
 ### HTML
 The W3C Markup Validation Service was used to validate the HTML page of the project. No errors or warnings to show.
