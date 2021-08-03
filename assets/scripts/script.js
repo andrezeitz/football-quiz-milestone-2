@@ -173,7 +173,7 @@ function showResultBox() {
  */
 function showScoreCounter() {
     const scoreCounter = quizBox.querySelector(".score-counter");
-    let scorePoints = userScore ; 
+    let scorePoints = userScore; 
     scoreCounter.innerHTML = scorePoints;
 }
 
