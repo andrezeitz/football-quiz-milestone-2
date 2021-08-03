@@ -149,7 +149,7 @@ function showResultBox() {
 
     // show how much you scored
     const scoreText = resultBox.querySelector(".score");
-    if (userScore > 0) {
+    if (userScore >= 0) {
         let scoreTag = '<span>You got '+ userScore +' points out of 100</span>';
         scoreText.innerHTML = scoreTag;
     }
