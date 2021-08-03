@@ -82,6 +82,7 @@ function showQuestions(index) {
 
 /**
  *  randomize array in-place using Durstenfeld shuffle algorithm
+ * https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array [Used the one reference to Durstenfeld shuffle algorithm]
  */ 
 function shuffleArray(questions) {
     for (let i = questions.length - 1; i > 0; i--) {
