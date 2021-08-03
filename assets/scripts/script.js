@@ -1,4 +1,4 @@
-// all required elements to open and close all boxes and be able to press on buttons
+// all required elements to open and close all boxes and also elements to start the countdown time
 const startBtn = document.querySelector(".start-btn button");
 const ruleBox = document.querySelector(".rule-box");
 const exitBtn = ruleBox.querySelector(".buttons .exit");
@@ -32,7 +32,7 @@ let queCount = 0;
 let queNumb = 1; // start from question 1 
 let counter;
 let timeValue = 20; // 20 sec each new question
-let userScore = 0;
+let userScore = 0; // user score 0 at start
 
 const nextBtn = quizBox.querySelector(".next-btn");
 const resultBox = document.querySelector(".result-box");
@@ -91,7 +91,7 @@ function shuffleArray(questions) {
 }    
 
 /**
- * after the 10th question the next button will change to show result
+ * after the 10th question the next button will change to show result instead
  */
 
 function updateButtonTextForFinalQuestion() {
@@ -143,7 +143,7 @@ for (let i = 0; i < allOptions; i++) {
  */
 function showResultBox() {
     ruleBox.classList.remove("activeInfo"); //rule box hidden
-    quizBox.classList.remove("activeQuiz"); //show quiz box 
+    quizBox.classList.remove("activeQuiz"); //quiz box hidden 
     resultBox.classList.add("activeResult"); //show result box 
 
     // show how much you scored
