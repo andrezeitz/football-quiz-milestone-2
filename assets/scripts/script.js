@@ -21,7 +21,7 @@ exitBtn.onclick = ()=> {
 //if press continue button
 continueBtn.onclick = ()=> {
     ruleBox.classList.remove("activeInfo"); //rule box hidden
-    quizBox.classList.add("activeQuiz") //show quiz box 
+    quizBox.classList.add("activeQuiz"); //show quiz box 
     shuffleArray(questions); // shuffle questions random
     showQuestions(0); // show questions
     queCounter(1); // show count for questions
@@ -36,7 +36,6 @@ let userScore = 0; // user score 0 at start
 
 const nextBtn = quizBox.querySelector(".next-btn");
 const resultBox = document.querySelector(".result-box");
-const playAgain = resultBox.querySelector(".buttons .play-again"); 
 const quitQuiz = resultBox.querySelector(".buttons .quit");
 
 //quit the quiz after finished and return to start page
@@ -56,7 +55,7 @@ nextBtn.onclick = ()=> {
         updateButtonTextForFinalQuestion(); // change button at the end to "Show result"
         nextBtn.style.display = "none"; //take away the next button before choosing an answer
         } else {
-        console.log("Finished!")
+        console.log("Finished!");
         showResultBox();
     }
 }
@@ -76,7 +75,7 @@ function showQuestions(index) {
     optionList.innerHTML = optionTag;
     const option = optionList.querySelectorAll(".option");
     for (let i = 0; i < option.length; i++) {
-        option[i].setAttribute("onclick", "optionSelected(this)")
+        option[i].setAttribute("onclick", "optionSelected(this)");
     }
 } 
 
