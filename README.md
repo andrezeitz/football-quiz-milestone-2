@@ -1,5 +1,5 @@
 # Football Quiz
-Football Quiz is a fun game that really challange everyone playing it. It include 10 questions from the Premier League, Champions League and of course the World Cup. The questions is a good mix between different countries. There is a maximum point system of 100 points to get the highest score.
+Football Quiz is a fun game that really challanges everyone playing it. It includes 10 questions from the Premier League, Champions League and of course the World Cup. The questions are a good mix between different countries. There is a maximum point system of 100 points to get the highest score.
 
 This website can not be used as a template for a business since it's a project for educational purposes. This website will be build with HTML, CSS and JavaScript.
 
@@ -40,19 +40,19 @@ Live website: [Football Quiz](https://andrezeitz.github.io/football-quiz/)
 ### User Stories
 * As a football enthusiast
   * I want quite hard questions
-  * I want question from different parts of the world
+  * I want questions from different parts of the world
   * I want the quiz to count the score, so I can beat my friends
   * I want to be able to contact the company on social media
 
 * As a user returning to the site
   * I want to be able to do the quiz multiple times to get different answers and get the highest score
   * I want the questions to change every month
-  * I want the questions to come up random and not the same start question each time
+  * I want the questions to come up random and not to start with the same question each time
 
 * As a user who does not know anything about football
   * I want to learn more about football
   * I want the site to show which alternative is correct when I miss on a question for better learning
-  * I want some question to be little easier to be able to get some correct answers in the beginning
+  * I want some questions to be little easier to be able to get some correct answers in the beginning
   * I want to see how you play the game and it's rules
 
 ### Site Owner Goals
@@ -103,7 +103,7 @@ The colors chosen are:
 * WebAim
 
 ### Contrast Checker
-All colors was check in contrast checker and pass the test. The only color that didn't pass for small text was #1E8534 as background to #FFF, but I only use this setup for large text in header and footer.
+All colors was checked in a contrast checker and pass the test. The only color that didn't pass for small text was #1E8534 as background to #FFF, but I only use this setup for large text in header and footer.
 
 ![contrast](https://user-images.githubusercontent.com/85236391/127561156-ab4e9578-d478-4cbd-9239-5c7586b649ae.png)
 
@@ -116,7 +116,7 @@ Navigation bar is visible on the top of the website with a logo that is clickabl
 ![navbar](https://user-images.githubusercontent.com/85236391/127557595-db364b6d-df26-4d10-a461-3ef01d02a41c.png)
 
 ### Home
-The home page start with a big "Start Quiz" button in the middle of the screen.
+The home page display a a big "Start Quiz" button in the middle of the screen.
 
 ![play](https://user-images.githubusercontent.com/85236391/127558544-f532547b-aa26-4fa1-9e49-d7b8ac0e6ca0.png)
 
@@ -128,7 +128,7 @@ When you click on the continue button the quiz will start. On the top left side 
 
 ![quizz](https://user-images.githubusercontent.com/85236391/127562420-aa7a9dc4-8233-4395-94a4-cfb8227cd490.png)
 
-After finishing the quiz you will be directed to a result page showing your total score. There is 3 different text alternative depending on how you scored. On the bottom there is a "Exit Quiz" button to exit the quiz.
+After finishing the quiz you will be directed to a result page showing your total score. There are 3 different text alternative depending on how you scored. On the bottom there is a "Exit Quiz" button to exit the quiz.
 
 ![high score](https://user-images.githubusercontent.com/85236391/127559529-1d4ee3b5-ff24-4e07-bcc8-93b1dab15d93.png)
 ![medium score](https://user-images.githubusercontent.com/85236391/127559536-5d2fa8f5-49b6-4f0b-808c-b2f6925486bc.png)
@@ -228,26 +228,26 @@ I also tested the website inside of Chrome Dev Tools. With different px sizes to
 The site was developed on Gitpod, using GitHub for version control and hosting the repository and final site. The repository for this project, and the associated workspace, was created from the Code Institute template.
 
 ### GitHub Pages
-1. Log in to GitHub and navigate to this project's respository [Fotball Quiz](https://github.com/andrezeitz/football-Quiz)
+1. Log in to GitHub and navigate to this project's respository [Football Quiz](https://github.com/andrezeitz/football-Quiz)
 2. On the navigation bar of the repository, go to "Settings" tab
 3. Find on the left-hand side menu and locate "Pages"
 4. Under "Source", select Branch: main and click Save
 5. The page will refresh automatically and a link to the page is published [Website](https://andrezeitz.github.io/football-quiz/)
 
 ### Cloning the project locally
-1. Log in to GitHub and navigate to this project's respository [Fotball Quiz](https://github.com/andrezeitz/football-Quiz)
+1. Log in to GitHub and navigate to this project's respository [Football Quiz](https://github.com/andrezeitz/football-Quiz)
 2. Click on "Code" and then copy the HTTPS address.
 3. Open Git terminal
 4. Type git clone and paste in the URL copied in step 2 and press enter
 
 ### Forking the repository
-1. Log in to GitHub and navigate to this project's respository [Fotball Quiz](https://github.com/andrezeitz/football-Quiz)
+1. Log in to GitHub and navigate to this project's respository [Football Quiz](https://github.com/andrezeitz/football-Quiz)
 2. In the top right of the page, below your profile you should see a "Fork" button. Simply click on this.
 3. A copy of the repository will then be added to your own Repositories Page.
 
 ## Credits
 * I learned the fundamentals on how to make a quiz and took some ideas from these two [Youtube](https://www.youtube.com/watch?v=f4fB9Xg2JEY&list=WL&index=1) [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k) channels
-* I find out how to randomize the quiz questions from this tread on [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
-* I read this tread on [Stack Overflow](https://stackoverflow.com/questions/7035842/how-to-change-the-buttons-text-using-javascript/41274932#41274932) and understood how to change buttons.
-* I use [W3School](https://www.w3schools.com/js/js_operators.asp) to check different operators.
+* I find out how to randomize the quiz questions from this thread on [Stack Overflow](https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array)
+* I read this thread on [Stack Overflow](https://stackoverflow.com/questions/7035842/how-to-change-the-buttons-text-using-javascript/41274932#41274932) and understood how to change buttons.
+* I used [W3School](https://www.w3schools.com/js/js_operators.asp) to check different operators.
 * Also this for looping [W3School](https://www.w3schools.com/js/js_loop_for.asp).
