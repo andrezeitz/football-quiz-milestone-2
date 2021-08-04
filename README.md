@@ -62,6 +62,7 @@ Live website: [Football Quiz](https://andrezeitz.github.io/football-quiz/)
 * As a site owner I want to let people compete with their friends
 * As a site owner I want to promote football all over the world
 * As a site owner I want to make it free so everyone is able to play
+* As a site owner I want the questions to come up randomly 
 
 ## Design
 
@@ -95,12 +96,12 @@ The colors chosen are:
 * GitHub
 * Gitpod
 * Google Fonts
-* Font Awesome
-* W3C HTML Validation
-* H3C CSS Validation
-* JS Validation
-* Am I responsive
-* WebAim
+* [Font Awesome](https://fontawesome.com/)
+* [W3C HTML Validation](https://validator.w3.org/)
+* [H3C CSS Validation](https://jigsaw.w3.org/css-validator/validator.html.en)
+* [JS Validation](https://esprima.org/demo/validate.html)
+* [Am I responsive](http://ami.responsivedesign.is/)
+* [WebAim](https://webaim.org/resources/contrastchecker/)
 
 ### Contrast Checker
 All colors was checked in a contrast checker and pass the test. The only color that didn't pass for small text was #1E8534 as background to #FFF, but I only use this setup for large text in header and footer.
@@ -216,6 +217,12 @@ I also tested the website inside of Chrome Dev Tools. With different px sizes to
 
 ![IMG_0202](https://user-images.githubusercontent.com/85236391/127555626-d86c72c5-5b37-4a3e-9fd0-3f5146c5016a.PNG)
 
+* I had this problem that the "Next Question" button would also show up after the last question was answerd. I used Java Script to make the button change the caption inside of it when all question was answered to "Show Result".
+
+![Skärmavbild 2021-08-04 kl  10 32 03](https://user-images.githubusercontent.com/85236391/128149261-094e304c-3f8a-4bd1-ad1d-dd5042e597f9.png)
+
+![Skärmavbild 2021-08-04 kl  10 32 21](https://user-images.githubusercontent.com/85236391/128149281-1286cb1d-0c8d-46ff-8959-82237d7ec3b6.png)
+
 * I had a problem to get the score system to work perfectly in the beginning. I forgot to define the "userScore" inside of the function "optionSelected" and it made the score text to not show up inside of the result box.
 
 ![score](https://user-images.githubusercontent.com/85236391/127556369-35ba696c-a68a-4402-a89f-b3b30886d7dd.png)
@@ -223,6 +230,8 @@ I also tested the website inside of Chrome Dev Tools. With different px sizes to
 * Also I had some problem to get the quiz box to fit perfect in between the header and footer on mobile devices. I solved that problem to inside the media queries make the font-size smaller inside the quiz box and also made the header and footer smaller to better fit mobile devices.
 
 ![quiz](https://user-images.githubusercontent.com/85236391/127556772-5955a70c-380f-461d-bf58-0cc1645a0b33.png)
+
+* I found out the question always came in the same order so I figure out how to make them come in randomly order instead by using the Durstenfeld shuffle implementation.
 
 ## Deployment
 The site was developed on Gitpod, using GitHub for version control and hosting the repository and final site. The repository for this project, and the associated workspace, was created from the Code Institute template.
