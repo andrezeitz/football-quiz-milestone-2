@@ -3,7 +3,7 @@ Football Quiz is a fun game that really challanges everyone playing it. It inclu
 
 This website can not be used as a template for a business since it's a project for educational purposes. This website will be build with HTML, CSS and JavaScript.
 
-Live website: [Football Quiz](https://andrezeitz.github.io/football-quiz/)
+Live website: [Football Quiz](https://andrezeitz.github.io/football-quiz-milestone-2/)
 
 ![responsive](https://user-images.githubusercontent.com/85236391/127551315-d0c556d7-97a8-4f1c-b771-42ef3b1aa14c.png)
 
